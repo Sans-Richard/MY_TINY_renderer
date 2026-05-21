@@ -1,0 +1,120 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++.exe 生成活动文件",
+            "command": "C:\\mingw64\\bin\\g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-Wall",
+                "-Wextra",
+                "-g3",
+                "-std=c++17",
+                "-I",
+                "${workspaceFolder}\\include",
+                "${file}",
+                "${workspaceFolder}\\excute\\tgaimage.cpp",
+                "${workspaceFolder}\\excute\\model.cpp",
+                "${workspaceFolder}\\excute\\our_gl.cpp",
+                "-fopenmp",
+                "-o",
+                "${workspaceFolder}\\output\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "调试器生成的任务。"
+        },
+        {
+            "type": "cppbuild",
+            "label": "Build: rasterization_of_model",
+            "command": "C:\\mingw64\\bin\\g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-Wall",
+                "-Wextra",
+                "-g3",
+                "-std=c++17",
+                "-I",
+                "${workspaceFolder}\\include",
+                "${workspaceFolder}\\rasterization_of_model.cpp",
+                "${workspaceFolder}\\excute\\tgaimage.cpp",
+                "${workspaceFolder}\\excute\\model.cpp",
+                "${workspaceFolder}\\excute\\our_gl.cpp",
+                "-fopenmp",
+                "-o",
+                "${workspaceFolder}\\output\\rasterization_of_model.exe"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "type": "cppbuild",
+            "label": "Build: wireframe_render",
+            "command": "C:\\mingw64\\bin\\g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-Wall",
+                "-Wextra",
+                "-g3",
+                "-std=c++17",
+                "-I",
+                "${workspaceFolder}\\include",
+                "${workspaceFolder}\\wireframe_render.cpp",
+                "${workspaceFolder}\\excute\\tgaimage.cpp",
+                "${workspaceFolder}\\excute\\model.cpp",
+                "${workspaceFolder}\\excute\\our_gl.cpp",
+                "-o",
+                "${workspaceFolder}\\output\\wireframe_render.exe"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "type": "cppbuild",
+            "label": "Build: active (with tgaimage+model)",
+            "command": "C:\\mingw64\\bin\\g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-Wall",
+                "-Wextra",
+                "-g3",
+                "-std=c++17",
+                "-I",
+                "${workspaceFolder}\\include",
+                "${file}",
+                "${workspaceFolder}\\excute\\tgaimage.cpp",
+                "${workspaceFolder}\\excute\\model.cpp",
+                "${workspaceFolder}\\excute\\our_gl.cpp",
+                "-fopenmp",
+                "-o",
+                "${workspaceFolder}\\output\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        }
+    ],
+    "version": "2.0.0"
+}
