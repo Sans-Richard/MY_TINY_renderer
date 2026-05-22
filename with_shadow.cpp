@@ -103,7 +103,7 @@ void drop_zbuffer(std::string filename,std::vector<double> &zbuffer,int width,in
 }
 
 
-int main(int argc, char** argv) {//ÃüÁîĞĞ£º         .\\test0.exe a.obj f.obj
+int main(int argc, char** argv) {//ÃüÁîĞĞ£º         .\\with_shadow.exe a.obj f.obj
     if (argc < 2) {
         std::cerr << "Usage: " << argv[0] << " obj/model.obj" << std::endl;
         return 1;
@@ -189,7 +189,7 @@ int main(int argc, char** argv) {//ÃüÁîĞĞ£º         .\\test0.exe a.obj f.obj
             });
         }
     }
-    framebuffer.write_tga_file("test0.tga");
+    framebuffer.write_tga_file("with_shadow.tga");
 
 
     return 0;
